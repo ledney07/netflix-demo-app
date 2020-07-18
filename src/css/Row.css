@@ -1,0 +1,65 @@
+.row {
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  cursor: pointer;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
+
+/* media queries*/
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .App {
+    overflow-x: hidden;
+  }
+
+  .banner {
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .row {
+    margin: 10px;
+  }
+  .row h1 {
+    margin-top: 20px;
+  }
+
+  .row__posters {
+    padding: 1rem 0rem;
+  }
+}

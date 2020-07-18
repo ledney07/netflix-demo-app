@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+:root {
+  --ft-secondary: "Montserrat", sans-serif;
+  --ft-primary: "Roboto", sans-serif;
+}
+
+.App {
+  background-color: #111;
+  color: #fffeff;
+  font-family: var(--ft-primary);
+}
